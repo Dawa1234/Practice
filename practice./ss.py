@@ -1,11 +1,14 @@
-import random
+# Identifying an armstrong numbers.
 
-my_list = []
-a = 0
-while a<=50:
-    a += 1
-    num = random.randint(1,200)
-    if num % 2 == 0:
-        print(my_list.append(num))
-
-
+num = int(input("Enter the number here --> "))
+sum = 0
+numm = num
+while num > 0:
+    rem = num % 10
+    sum = sum + rem ** 3
+    num = num // 10
+print(numm)
+if sum == numm:
+    print("The entered number is an armstrong number")
+else:
+    print("The entered number is not an armstrong number")
